@@ -17,7 +17,7 @@ let clickable
 
 
     return (
-      <div className={edit + "bg-grey  text-center rounded-lg py-2 px-3 font-bold"}
+      <div className={edit + "bg-grey  text-center rounded-lg py-2 px-6 font-bold"}
       onClick={clickable}
       >
       {this.props.text}

@@ -90,7 +90,7 @@ class App extends Component {
 
   render() {
     return (<div className="bg-grey-lightest">
-      <div className="w-full bg-grey-light p-3 mt-6">
+      <div className="w-full bg-grey-light p-6">
         <h1 className="text-center">Acey Duecey</h1>
       </div>
 
@@ -103,8 +103,8 @@ class App extends Component {
       <CardDisplay deck={this.state.deck} play={this.state.play}  />
 
       <div className=" flex justify-center m-4">
-        <div className=" flex justify-center lg:w-2/5">
-          <div className=" flex justify-around lg:w-2/5 x-3">
+        <div className=" flex justify-center lg:w-3/5">
+          <div className=" flex justify-around lg:w-3/5 m-3">
             <ButtonWidget name="bet" text="Bet" onClick={this.bet} active={this.state.buttonsActive[0]}/>
             <ButtonWidget name="pass" text="Pass" onClick={this.pass} active={this.state.buttonsActive[1]}/>
             <ButtonWidget name="next" text="Next" onClick={this.next} active={this.state.buttonsActive[2]}/>
@@ -132,6 +132,15 @@ class App extends Component {
       <div className="flex justify-center  text-center text-orange-darker mx-2">
         <p>Scoring -- Win: 50 pts. / Lose: -25 pts. / Pass: -5 pts.</p>
       </div>
+
+      <footer class="flex justify-center flex-col lg:flex-row w-full py-8 mt-6 bg-grey-light">
+        <a href="https://kylehumphrey.com" target="_blank" rel="noopener noreferrer" className="text-black no-underline px-4">
+          Made by Kyle Humphrey
+        </a>
+        <a href="https://github.com/InsearchofPandas/acey-duecey" target="_blank" rel="noopener noreferrer" className="text-black no-underline px-4">
+          View Code on GitHub
+        </a>
+      </footer>
     </div>)
   }
 }
